@@ -3,12 +3,25 @@
 <head>
 <script>
 function loadPage(form) {
-    var url = form.furl.value;
+    var urlValue = form.furl.value;
     var width = form.fwidth.value;
     var height = form.fheight.value;
     
+    var url = new URL(urlValue);
+	url.searchParams.set(form.param0.value, form.value0.value);
+	url.searchParams.set(form.param1.value, form.value1.value);
+	url.searchParams.set(form.param2.value, form.value2.value);
+	url.searchParams.set(form.param3.value, form.value3.value);
+	url.searchParams.set(form.param4.value, form.value4.value);
+	url.searchParams.set(form.param5.value, form.value5.value);
+	url.searchParams.set(form.param6.value, form.value6.value);
+	url.searchParams.set(form.param7.value, form.value7.value);
+	url.searchParams.set(form.param8.value, form.value8.value);
+	url.searchParams.set(form.param9.value, form.value9.value);
+	url.searchParams.set(form.param10.value, form.value10.value);
+
     var iframe = document.getElementById('id_iframe');
-    iframe.src = url;
+    iframe.src = url.toString();
     iframe.width = width;
     iframe.height = height;
 }
@@ -18,10 +31,46 @@ function loadPage(form) {
 <body>
 
 <form name="myForm" action="" method="GET">
-  URL: <input type="text" name="furl" value="https://igaming.fromsolvers.com/" size="80"></br>
+  <h3> Settings: </h3>
+  URL: <input type="text" name="furl" value="https://igaming.fromsolvers.com/" size="100"></br>
   width: <input type="text" name="fwidth" value="100%"></br>
-  height: <input type="text" name="fheight" value="700px"></br>
-  </br>
+  height: <input type="text" name="fheight" value="400px"></br>
+  
+  <h3> URL Parameters: </h3>
+  param: <input type="text" name="param0" value="currency">
+  value: <input type="text" name="value0" value="USD" size="70"></br>
+  
+  param: <input type="text" name="param1" value="customer">
+  value: <input type="text" name="value1" value="2019045569026" size="70"></br>
+  
+  param: <input type="text" name="param2" value="demo">
+  value: <input type="text" name="value2" value="false" size="70"></br>
+  
+  param: <input type="text" name="param3" value="gameId">
+  value: <input type="text" name="value3" value="r10_crash" size="70"></br>
+  
+  param: <input type="text" name="param4" value="lang">
+  value: <input type="text" name="value4" value="en" size="70"></br>
+  
+  param: <input type="text" name="param5" value="lobby">
+  value: <input type="text" name="value5" value="http://casinoapi.sporting-dev.com/apiclient/gameslistsearch" size="70"></br>
+  
+  param: <input type="text" name="param6" value="platform">
+  value: <input type="text" name="value6" value="d" size="70"></br>
+  
+  param: <input type="text" name="param7" value="tableId">
+  value: <input type="text" name="value7" value="v1" size="70"></br>
+  
+  param: <input type="text" name="param8" value="token">
+  value: <input type="text" name="value8" value="4DD8621822DE6" size="70"></br>
+  
+  param: <input type="text" name="param9" value="trader">
+  value: <input type="text" name="value9" value="ST499" size="70"></br>
+  
+  param: <input type="text" name="param10" value="country">
+  value: <input type="text" name="value10" value="SI" size="70"></br>
+
+</br>
   <input type="button" name="button" value="Load Game" onClick="loadPage(this.form)">
 </form>
 
