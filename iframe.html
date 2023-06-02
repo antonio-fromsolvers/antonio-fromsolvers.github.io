@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadPage(form) {
+    var url = form.furl.value;
+    var width = form.fwidth.value;
+    var height = form.fheight.value;
+    
+    var iframe = document.getElementById('id_iframe');
+    iframe.src = url;
+    iframe.width = width;
+    iframe.height = height;
+}
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="" method="GET">
+  URL: <input type="text" name="furl" value="https://igaming.fromsolvers.com/"></br>
+  width: <input type="text" name="fwidth" value="100%"></br>
+  height: <input type="text" name="fheight" value="500px"></br>
+  </br>
+  <input type="button" name="button" value="Load Game" onClick="loadPage(this.form)">
+</form>
+
+</br>
+
+<iframe id="id_iframe" src="" name="iframe_a" height="300px" width="500px" title="Iframe Example"></iframe>
+
+
+</body>
+</html>
