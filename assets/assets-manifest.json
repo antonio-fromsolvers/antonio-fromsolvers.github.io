@@ -117,6 +117,102 @@
       "name": "common",
       "assets": [
         {
+          "name": "common/audio/music_basic_background.mp3",
+          "srcs": [
+            "./common/audio/music_basic_background.mp3",
+            "./common/audio/music_basic_background.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/music_gameplay.wav",
+          "srcs": [
+            "./common/audio/music_gameplay.mp3",
+            "./common/audio/music_gameplay.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_bet_change.wav",
+          "srcs": [
+            "./common/audio/sfx_bet_change.mp3",
+            "./common/audio/sfx_bet_change.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_cash_out.wav",
+          "srcs": [
+            "./common/audio/sfx_cash_out.mp3",
+            "./common/audio/sfx_cash_out.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_game_start.wav",
+          "srcs": [
+            "./common/audio/sfx_game_start.mp3",
+            "./common/audio/sfx_game_start.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_generic_button.wav",
+          "srcs": [
+            "./common/audio/sfx_generic_button.mp3",
+            "./common/audio/sfx_generic_button.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_max_win.wav",
+          "srcs": [
+            "./common/audio/sfx_max_win.mp3",
+            "./common/audio/sfx_max_win.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/audio/sfx_player_fall_down_sfx.wav",
+          "srcs": [
+            "./common/audio/sfx_player_fall_down_sfx.mp3",
+            "./common/audio/sfx_player_fall_down_sfx.ogg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
           "name": "common/bgm-main.mp3",
           "srcs": [
             "./common/bgm-main.mp3",
@@ -245,39 +341,6 @@
     {
       "name": "preload",
       "assets": [
-        {
-          "name": "preload/cauldron-skeleton.atlas",
-          "srcs": [
-            "preload/cauldron-skeleton.atlas"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "preload/cauldron-skeleton.json",
-          "srcs": [
-            "preload/cauldron-skeleton.json"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "preload/cauldron-skeleton.png",
-          "srcs": [
-            "preload/cauldron-skeleton.png"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
         {
           "name": "preload/preload-atlas/preload-atlas.json",
           "srcs": [

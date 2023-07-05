@@ -6,25 +6,39 @@ package crash_protocol;
 
 import "google/protobuf/timestamp.proto";
 
+// Ping Pong
+
+message PingPongMessage{
+    google.protobuf.Timestamp last_server_time = 1;
+    google.protobuf.Timestamp last_client_time = 2;
+    google.protobuf.Timestamp previous_server_time = 3;
+    google.protobuf.Timestamp previous_client_time = 4;
+    int64 delay_tolerance_ms = 5;
+    int64 ping_pong_delta_ms = 6;
+}
+
 // Generic
 
 enum Method {
     REQUEST = 0;
-    CONNECT = 1;
-    GAME_START = 2;
-    GAME_LOCK = 3;
-    GAME_PLAY = 4;
-    GAME_END = 5;
-    CASH_OUT = 6;
-    JOIN_GAME = 7;
-    LEAVE_GAME = 8;
+    PING_PONG = 1;
+    CONNECT = 2;
+    GAME_START = 3;
+    GAME_LOCK = 4;
+    GAME_PLAY = 5;
+    GAME_END = 6;
+    CASH_OUT = 7;
+    JOIN_GAME = 8;
+    LEAVE_GAME = 9;
+    CONFIRM_JOIN_GAME = 10;
+    BACKGROUND_FAN = 11;
 }
 
 message GenericRequest {
     Method method = 1;
     string transaction_id = 2;
-    google.protobuf.Timestamp request_time = 3;
     oneof params {
+        PingPongMessage ping_pong_message = 3;
         JoinParams join_params = 4;
         EmptyParams empty_params = 5;
     }
@@ -33,96 +47,117 @@ message GenericRequest {
 message GenericResponse {
     Method method = 1;
     optional string transaction_id = 2;
-    google.protobuf.Timestamp response_time = 3;
     oneof response {
+        PingPongMessage ping_pong_message = 3;
         ConnectResponse connect_response = 4;
-        GameStartResponse game_start_response = 5;
-        GameLockResponse game_lock_response = 6;
-        GamePlayResponse game_play_response = 7;
-        GameEndResponse game_end_response = 8;
-        CashOutResponse cash_out_response = 9;
-        JoinResponse join_response = 10;
-        LeaveResponse leave_response = 11;
+        PlayerInfoResponse player_info_response = 5;
+        GameStartResponse game_start_response = 6;
+        GameLockResponse game_lock_response = 7;
+        GamePlayResponse game_play_response = 8;
+        GameEndResponse game_end_response = 9;
+        CashOutResponse cash_out_response = 10;
+        BackgroundFanResponse background_fan_response = 13;
     }
 }
 
 message ErrorResponse {
     Method method = 1;
     optional string transaction_id = 2;
-    google.protobuf.Timestamp response_time = 3;
-    string error = 4;
+    string error = 3;
 }
 
 message ConfigsResponse {
-    int32 betPrecision = 1;
-    int32 multiplierPrecision = 2;
-    int32 minBet = 3;
-    int32 maxBet = 4;
-    int32 maxMultiplier = 5;
-    int32 maxProfit = 6;
+    int32 bet_precision = 1;
+    int32 multiplier_precision = 2;
+    int32 percentage_precision = 3;
+    int32 min_bet = 4;
+    int32 max_bet = 5;
+    int32 max_multiplier = 6;
+    int32 max_profit = 7;
+    int32 min_auto_multiplier = 8;
 }
 
 // Params
 
 message JoinParams {
     int32 bet = 1;
+    optional int32 auto_multiplier = 2;
+    optional int32 auto_profit = 3;
+    optional int32 auto_rounds = 4;
+    optional int32 bet_on_win = 5;
+    optional int32 bet_on_loss = 6;
+    optional int32 stop_on_profit = 7;
+    optional int32 stop_on_loss = 8;
 }
 
 message EmptyParams {}
 
 // Response
 
+message BetInfoResponse{
+    int32 amount = 1;
+    optional int32 auto_multiplier = 2;
+    optional int32 auto_profit = 3;
+    optional int32 auto_rounds = 4;
+    optional int32 stop_on_profit = 5;
+    optional int32 stop_on_loss = 6;
+    optional int32 bet_on_win = 7;
+    optional int32 bet_on_loss = 8;
+}
+
+message PlayerInfoResponse{
+    string id = 1;
+    string state = 2;
+    int64 budget = 3;
+    int32 bonus_budget = 4;
+    optional BetInfoResponse bet_info = 5;
+}
+
 message ConnectResponse {
-    string player_id = 1;
-    int32 budget = 2;
-    ConfigsResponse configs = 3;
+    PlayerInfoResponse player_info = 1;
+    ConfigsResponse configs = 2;
+}
+
+message CashOutResponse {
+    string game_id = 1;
+    int32 profit = 2;
+    int32 cash_out_multiplier = 3;
+    PlayerInfoResponse player_info = 4;
+}
+
+message BackgroundFanResponse{
+    string game_id = 1;
+    string player_id = 2;
+    int32 cash_out_multiplier = 3;
+    int32 profit = 4;
 }
 
 message GameStartResponse {
     string game_id = 1;
-    repeated float last_multipliers = 2;
+    repeated int32 last_multipliers = 2;
     google.protobuf.Timestamp start_time = 3;
     google.protobuf.Timestamp next_state_time = 4;
 }
 
 message GameLockResponse {
     string game_id = 1;
-    repeated float last_multipliers = 2;
+    repeated int32 last_multipliers = 2;
     google.protobuf.Timestamp start_time = 3;
     google.protobuf.Timestamp next_state_time = 4;
 }
 
 message GamePlayResponse {
     string game_id = 1;
-    float multiplier = 2;
-    repeated float last_multipliers = 3;
+    int32 multiplier = 2;
+    repeated int32 last_multipliers = 3;
     bool crash = 4;
     google.protobuf.Timestamp start_time = 5;
 }
 
 message GameEndResponse {
     string game_id = 1;
-    float crash_multiplier = 2;
-    repeated float last_multipliers = 3;
+    int32 crash_multiplier = 2;
+    repeated int32 last_multipliers = 3;
     google.protobuf.Timestamp start_time = 4;
     google.protobuf.Timestamp next_state_time = 5;
-}
-
-message JoinResponse {
-    string player_id = 1;
-    int32 budget = 2;
-}
-
-message LeaveResponse {
-    string player_id = 1;
-    int32 budget = 2;
-}
-
-message CashOutResponse {
-    string game_id = 1;
-    string player_id = 2;
-    float cash_out_multiplier = 3;
-    int32 bet = 4;
-    int32 win = 5;
-    int32 budget = 6;
 }
