@@ -317,6 +317,39 @@
               "m": true
             }
           }
+        },
+        {
+          "name": "common/skins/footx.atlas",
+          "srcs": [
+            "common/skins/footx.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/skins/footx.json",
+          "srcs": [
+            "common/skins/footx.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "name": "common/skins/footx.png",
+          "srcs": [
+            "common/skins/footx.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
         }
       ]
     },
