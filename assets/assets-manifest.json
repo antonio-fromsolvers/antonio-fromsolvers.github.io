@@ -2,125 +2,15 @@
   "bundles": [
     {
       "name": "default",
-      "assets": [
-        {
-          "name": "fonts/Epilogue-Black.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Black.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-BlackItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-BlackItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Bold.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Bold.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-BoldItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-BoldItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-ExtraBold.ttf",
-          "srcs": [
-            "./fonts/Epilogue-ExtraBold.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-ExtraBoldItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-ExtraBoldItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-ExtraLight.ttf",
-          "srcs": [
-            "./fonts/Epilogue-ExtraLight.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-ExtraLightItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-ExtraLightItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Italic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Italic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Light.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Light.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-LightItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-LightItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Medium.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Medium.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-MediumItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-MediumItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Regular.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Regular.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-SemiBold.ttf",
-          "srcs": [
-            "./fonts/Epilogue-SemiBold.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-SemiBoldItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-SemiBoldItalic.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-Thin.ttf",
-          "srcs": [
-            "./fonts/Epilogue-Thin.woff2"
-          ]
-        },
-        {
-          "name": "fonts/Epilogue-ThinItalic.ttf",
-          "srcs": [
-            "./fonts/Epilogue-ThinItalic.woff2"
-          ]
-        }
-      ]
+      "assets": []
     },
     {
-      "name": "common",
+      "name": "prototype",
       "assets": [
         {
-          "name": "common/audio/music_basic_background.mp3",
+          "name": "prototype/bus-right.png",
           "srcs": [
-            "./common/audio/music_basic_background.mp3",
-            "./common/audio/music_basic_background.ogg"
+            "prototype/bus-right.png"
           ],
           "data": {
             "tags": {
@@ -129,10 +19,9 @@
           }
         },
         {
-          "name": "common/audio/music_gameplay.wav",
+          "name": "prototype/button-large-hover.png",
           "srcs": [
-            "./common/audio/music_gameplay.mp3",
-            "./common/audio/music_gameplay.ogg"
+            "prototype/button-large-hover.png"
           ],
           "data": {
             "tags": {
@@ -141,10 +30,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_bet_change.wav",
+          "name": "prototype/button-large-press.png",
           "srcs": [
-            "./common/audio/sfx_bet_change.mp3",
-            "./common/audio/sfx_bet_change.ogg"
+            "prototype/button-large-press.png"
           ],
           "data": {
             "tags": {
@@ -153,10 +41,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_cash_out.wav",
+          "name": "prototype/button-large.png",
           "srcs": [
-            "./common/audio/sfx_cash_out.mp3",
-            "./common/audio/sfx_cash_out.ogg"
+            "prototype/button-large.png"
           ],
           "data": {
             "tags": {
@@ -165,10 +52,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_game_start.wav",
+          "name": "prototype/button-small-hover.png",
           "srcs": [
-            "./common/audio/sfx_game_start.mp3",
-            "./common/audio/sfx_game_start.ogg"
+            "prototype/button-small-hover.png"
           ],
           "data": {
             "tags": {
@@ -177,10 +63,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_generic_button.wav",
+          "name": "prototype/button-small-press.png",
           "srcs": [
-            "./common/audio/sfx_generic_button.mp3",
-            "./common/audio/sfx_generic_button.ogg"
+            "prototype/button-small-press.png"
           ],
           "data": {
             "tags": {
@@ -189,10 +74,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_max_win.wav",
+          "name": "prototype/button-small.png",
           "srcs": [
-            "./common/audio/sfx_max_win.mp3",
-            "./common/audio/sfx_max_win.ogg"
+            "prototype/button-small.png"
           ],
           "data": {
             "tags": {
@@ -201,10 +85,9 @@
           }
         },
         {
-          "name": "common/audio/sfx_player_fall_down_sfx.wav",
+          "name": "prototype/debug-bg.png",
           "srcs": [
-            "./common/audio/sfx_player_fall_down_sfx.mp3",
-            "./common/audio/sfx_player_fall_down_sfx.ogg"
+            "prototype/debug-bg.png"
           ],
           "data": {
             "tags": {
@@ -213,10 +96,9 @@
           }
         },
         {
-          "name": "common/bgm-main.mp3",
+          "name": "prototype/kombi.png",
           "srcs": [
-            "./common/bgm-main.mp3",
-            "./common/bgm-main.ogg"
+            "prototype/kombi.png"
           ],
           "data": {
             "tags": {
@@ -225,23 +107,9 @@
           }
         },
         {
-          "name": "common/common-atlas/common-atlas.json",
+          "name": "prototype/road-tile-squared.png",
           "srcs": [
-            "common/common-atlas/common-atlas@1x.json",
-            "common/common-atlas/common-atlas@0.5x.json"
-          ],
-          "data": {
-            "tags": {
-              "tps": true,
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "common/sfx-hover.wav",
-          "srcs": [
-            "./common/sfx-hover.mp3",
-            "./common/sfx-hover.ogg"
+            "prototype/road-tile-squared.png"
           ],
           "data": {
             "tags": {
@@ -250,10 +118,9 @@
           }
         },
         {
-          "name": "common/sfx-incorrect.wav",
+          "name": "prototype/road-tile.png",
           "srcs": [
-            "./common/sfx-incorrect.mp3",
-            "./common/sfx-incorrect.ogg"
+            "prototype/road-tile.png"
           ],
           "data": {
             "tags": {
@@ -262,107 +129,9 @@
           }
         },
         {
-          "name": "common/sfx-press.wav",
+          "name": "prototype/sky-background.png",
           "srcs": [
-            "./common/sfx-press.mp3",
-            "./common/sfx-press.ogg"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "common/sfx-special.wav",
-          "srcs": [
-            "./common/sfx-special.mp3",
-            "./common/sfx-special.ogg"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "common/skins/R10_Character_3QRT.atlas",
-          "srcs": [
-            "common/skins/R10_Character_3QRT.atlas"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "common/skins/R10_Character_3QRT.png",
-          "srcs": [
-            "common/skins/R10_Character_3QRT.png"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        },
-        {
-          "name": "common/skins/R10_Character_3QRT.skel",
-          "srcs": [
-            "common/skins/R10_Character_3QRT.skel"
-          ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "home",
-      "assets": [
-        {
-          "name": "home/home-atlas/home-atlas.json",
-          "srcs": [
-            "home/home-atlas/home-atlas@1x.json",
-            "home/home-atlas/home-atlas@0.5x.json"
-          ],
-          "data": {
-            "tags": {
-              "tps": true,
-              "m": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "preload",
-      "assets": [
-        {
-          "name": "preload/preload-atlas/preload-atlas.json",
-          "srcs": [
-            "preload/preload-atlas/preload-atlas@1x.json",
-            "preload/preload-atlas/preload-atlas@0.5x.json"
-          ],
-          "data": {
-            "tags": {
-              "tps": true,
-              "m": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "protos",
-      "assets": [
-        {
-          "name": "protos/crash_protocol.proto",
-          "srcs": [
-            "protos/crash_protocol.proto"
+            "prototype/sky-background.png"
           ],
           "data": {
             "tags": {
