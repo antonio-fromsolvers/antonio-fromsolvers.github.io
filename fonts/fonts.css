@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "ChelseaMarket";
+  src: url("ChelseaMarket.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TexasTango";
+  src: url("TexasTango.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

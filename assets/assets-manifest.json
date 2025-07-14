@@ -5,139 +5,794 @@
       "assets": []
     },
     {
-      "name": "prototype",
+      "name": "preload",
       "assets": [
         {
-          "name": "prototype/bus-right.png",
-          "srcs": [
-            "prototype/bus-right.png"
+          "alias": [
+            "preload/bg.webp",
+            "preload/bg",
+            "bg.webp",
+            "bg"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bg.webp"
+          ]
         },
         {
-          "name": "prototype/button-large-hover.png",
-          "srcs": [
-            "prototype/button-large-hover.png"
+          "alias": [
+            "preload/bgBudget.webp",
+            "preload/bgBudget",
+            "bgBudget.webp",
+            "bgBudget"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgBudget.webp"
+          ]
         },
         {
-          "name": "prototype/button-large-press.png",
-          "srcs": [
-            "prototype/button-large-press.png"
+          "alias": [
+            "preload/bgFreeSpins.webp",
+            "preload/bgFreeSpins",
+            "bgFreeSpins.webp",
+            "bgFreeSpins"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgFreeSpins.webp"
+          ]
         },
         {
-          "name": "prototype/button-large.png",
-          "srcs": [
-            "prototype/button-large.png"
+          "alias": [
+            "preload/bgGame.webp",
+            "preload/bgGame",
+            "bgGame.webp",
+            "bgGame"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgGame.webp"
+          ]
         },
         {
-          "name": "prototype/button-small-hover.png",
-          "srcs": [
-            "prototype/button-small-hover.png"
+          "alias": [
+            "preload/bgGameFrame.webp",
+            "preload/bgGameFrame",
+            "bgGameFrame.webp",
+            "bgGameFrame"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgGameFrame.webp"
+          ]
         },
         {
-          "name": "prototype/button-small-press.png",
-          "srcs": [
-            "prototype/button-small-press.png"
+          "alias": [
+            "preload/bgGlow.webp",
+            "preload/bgGlow",
+            "bgGlow.webp",
+            "bgGlow"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgGlow.webp"
+          ]
         },
         {
-          "name": "prototype/button-small.png",
-          "srcs": [
-            "prototype/button-small.png"
+          "alias": [
+            "preload/bgMask.webp",
+            "preload/bgMask",
+            "bgMask.webp",
+            "bgMask"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgMask.webp"
+          ]
         },
         {
-          "name": "prototype/debug-bg.png",
-          "srcs": [
-            "prototype/debug-bg.png"
+          "alias": [
+            "preload/bgMegaWays.png",
+            "preload/bgMegaWays",
+            "bgMegaWays.png",
+            "bgMegaWays"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgMegaWays.png"
+          ]
         },
         {
-          "name": "prototype/kombi.png",
-          "srcs": [
-            "prototype/kombi.png"
+          "alias": [
+            "preload/bgModals.webp",
+            "preload/bgModals",
+            "bgModals.webp",
+            "bgModals"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgModals.webp"
+          ]
         },
         {
-          "name": "prototype/road-tile-squared.png",
-          "srcs": [
-            "prototype/road-tile-squared.png"
+          "alias": [
+            "preload/bgModalsMobile.webp",
+            "preload/bgModalsMobile",
+            "bgModalsMobile.webp",
+            "bgModalsMobile"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgModalsMobile.webp"
+          ]
         },
         {
-          "name": "prototype/road-tile.png",
-          "srcs": [
-            "prototype/road-tile.png"
+          "alias": [
+            "preload/bgModalsTable.webp",
+            "preload/bgModalsTable",
+            "bgModalsTable.webp",
+            "bgModalsTable"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgModalsTable.webp"
+          ]
         },
         {
-          "name": "prototype/sky-background.png",
-          "srcs": [
-            "prototype/sky-background.png"
+          "alias": [
+            "preload/bgOverlayModals.webp",
+            "preload/bgOverlayModals",
+            "bgOverlayModals.webp",
+            "bgOverlayModals"
           ],
-          "data": {
-            "tags": {
-              "m": true
-            }
-          }
+          "src": [
+            "preload/bgOverlayModals.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/bgProfit.webp",
+            "preload/bgProfit",
+            "bgProfit.webp",
+            "bgProfit"
+          ],
+          "src": [
+            "preload/bgProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/bgRemainingFreeSpins.png",
+            "preload/bgRemainingFreeSpins",
+            "bgRemainingFreeSpins.png",
+            "bgRemainingFreeSpins"
+          ],
+          "src": [
+            "preload/bgRemainingFreeSpins.png"
+          ]
+        },
+        {
+          "alias": [
+            "preload/btnHighlight.webp",
+            "preload/btnHighlight",
+            "btnHighlight.webp",
+            "btnHighlight"
+          ],
+          "src": [
+            "preload/btnHighlight.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/btnPlayMask.png",
+            "preload/btnPlayMask",
+            "btnPlayMask.png",
+            "btnPlayMask"
+          ],
+          "src": [
+            "preload/btnPlayMask.png"
+          ]
+        },
+        {
+          "alias": [
+            "preload/buttonRed.webp",
+            "preload/buttonRed",
+            "buttonRed.webp",
+            "buttonRed"
+          ],
+          "src": [
+            "preload/buttonRed.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/buttonYellow.webp",
+            "preload/buttonYellow",
+            "buttonYellow.webp",
+            "buttonYellow"
+          ],
+          "src": [
+            "preload/buttonYellow.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/buttons/buttons.json",
+            "buttons.json"
+          ],
+          "src": [
+            "preload/buttons/buttons.json"
+          ]
+        },
+        {
+          "alias": [
+            "preload/buttons/buttons.png",
+            "buttons.png"
+          ],
+          "src": [
+            "preload/buttons/buttons.png"
+          ]
+        },
+        {
+          "alias": [
+            "preload/coinSpinAnimSprites.webp",
+            "preload/coinSpinAnimSprites",
+            "coinSpinAnimSprites.webp",
+            "coinSpinAnimSprites"
+          ],
+          "src": [
+            "preload/coinSpinAnimSprites.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/coinsProfit.webp",
+            "preload/coinsProfit",
+            "coinsProfit.webp",
+            "coinsProfit"
+          ],
+          "src": [
+            "preload/coinsProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/freeRolls.webp",
+            "preload/freeRolls",
+            "freeRolls.webp",
+            "freeRolls"
+          ],
+          "src": [
+            "preload/freeRolls.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/freeRollsCircle.webp",
+            "preload/freeRollsCircle",
+            "freeRollsCircle.webp",
+            "freeRollsCircle"
+          ],
+          "src": [
+            "preload/freeRollsCircle.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/freeRoollsRadius.webp",
+            "preload/freeRoollsRadius",
+            "freeRoollsRadius.webp",
+            "freeRoollsRadius"
+          ],
+          "src": [
+            "preload/freeRoollsRadius.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/gameFrame.webp",
+            "preload/gameFrame",
+            "gameFrame.webp",
+            "gameFrame"
+          ],
+          "src": [
+            "preload/gameFrame.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/inkaLogo.webp",
+            "preload/inkaLogo",
+            "inkaLogo.webp",
+            "inkaLogo"
+          ],
+          "src": [
+            "preload/inkaLogo.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/inkaSkin.webp",
+            "preload/inkaSkin",
+            "inkaSkin.webp",
+            "inkaSkin"
+          ],
+          "src": [
+            "preload/inkaSkin.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/logoFrame.png",
+            "preload/logoFrame",
+            "logoFrame.png",
+            "logoFrame"
+          ],
+          "src": [
+            "preload/logoFrame.png"
+          ]
+        },
+        {
+          "alias": [
+            "preload/modals/buttonsModals.json",
+            "buttonsModals.json"
+          ],
+          "src": [
+            "preload/modals/buttonsModals.json"
+          ]
+        },
+        {
+          "alias": [
+            "preload/modals/buttonsModals.png",
+            "buttonsModals.png"
+          ],
+          "src": [
+            "preload/modals/buttonsModals.png"
+          ]
+        },
+        {
+          "alias": [
+            "preload/overlayProfit.webp",
+            "preload/overlayProfit",
+            "overlayProfit.webp",
+            "overlayProfit"
+          ],
+          "src": [
+            "preload/overlayProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/overlayProfitGlow.webp",
+            "preload/overlayProfitGlow",
+            "overlayProfitGlow.webp",
+            "overlayProfitGlow"
+          ],
+          "src": [
+            "preload/overlayProfitGlow.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/panelAmount.webp",
+            "preload/panelAmount",
+            "panelAmount.webp",
+            "panelAmount"
+          ],
+          "src": [
+            "preload/panelAmount.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/panelAmountProfit.webp",
+            "preload/panelAmountProfit",
+            "panelAmountProfit.webp",
+            "panelAmountProfit"
+          ],
+          "src": [
+            "preload/panelAmountProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/profitModalGlow.webp",
+            "preload/profitModalGlow",
+            "profitModalGlow.webp",
+            "profitModalGlow"
+          ],
+          "src": [
+            "preload/profitModalGlow.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/rewardMultiplier.webp",
+            "preload/rewardMultiplier",
+            "rewardMultiplier.webp",
+            "rewardMultiplier"
+          ],
+          "src": [
+            "preload/rewardMultiplier.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/supaySkin.webp",
+            "preload/supaySkin",
+            "supaySkin.webp",
+            "supaySkin"
+          ],
+          "src": [
+            "preload/supaySkin.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/textEpicProfit.webp",
+            "preload/textEpicProfit",
+            "textEpicProfit.webp",
+            "textEpicProfit"
+          ],
+          "src": [
+            "preload/textEpicProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/textHighProfit.webp",
+            "preload/textHighProfit",
+            "textHighProfit.webp",
+            "textHighProfit"
+          ],
+          "src": [
+            "preload/textHighProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/textLowProfit.webp",
+            "preload/textLowProfit",
+            "textLowProfit.webp",
+            "textLowProfit"
+          ],
+          "src": [
+            "preload/textLowProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/textMediumProfit.webp",
+            "preload/textMediumProfit",
+            "textMediumProfit.webp",
+            "textMediumProfit"
+          ],
+          "src": [
+            "preload/textMediumProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/thunderProfit.webp",
+            "preload/thunderProfit",
+            "thunderProfit.webp",
+            "thunderProfit"
+          ],
+          "src": [
+            "preload/thunderProfit.webp"
+          ]
+        },
+        {
+          "alias": [
+            "preload/titleProfit.webp",
+            "preload/titleProfit",
+            "titleProfit.webp",
+            "titleProfit"
+          ],
+          "src": [
+            "preload/titleProfit.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "symbolsAtlas",
+      "assets": [
+        {
+          "alias": [
+            "symbolsAtlas/animation/0/0.json",
+            "0.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/0/0.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/0/0.webp",
+            "0.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/0/0.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/1/1.json",
+            "1.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/1/1.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/1/1.webp",
+            "1.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/1/1.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/2/2.json",
+            "2.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/2/2.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/2/2.webp",
+            "2.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/2/2.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/3/3.json",
+            "3.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/3/3.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/3/3.webp",
+            "3.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/3/3.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/4/4.json",
+            "4.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/4/4.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/4/4.webp",
+            "4.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/4/4.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/5/5.json",
+            "5.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/5/5.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/5/5.webp",
+            "5.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/5/5.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/6/6.json",
+            "6.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/6/6.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/6/6.webp",
+            "6.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/6/6.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/7/7.json",
+            "7.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/7/7.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/7/7.webp",
+            "7.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/7/7.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/8/8.json",
+            "8.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/8/8.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/8/8.webp",
+            "8.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/8/8.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/9/9.json",
+            "9.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/9/9.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/9/9.webp",
+            "9.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/9/9.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/bank/bank.json",
+            "bank.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/bank/bank.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/bank/bank.webp",
+            "bank.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/bank/bank.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/freeSpin/freeSpin.json",
+            "freeSpin.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/freeSpin/freeSpin.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/freeSpin/freeSpin.webp",
+            "freeSpin.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/freeSpin/freeSpin.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x1/supay-x1.json",
+            "supay-x1.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x1/supay-x1.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x1/supay-x1.webp",
+            "supay-x1.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x1/supay-x1.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x2/supay-x2.json",
+            "supay-x2.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x2/supay-x2.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x2/supay-x2.webp",
+            "supay-x2.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x2/supay-x2.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x3/supay-x3.json",
+            "supay-x3.json"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x3/supay-x3.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/animation/supay-x3/supay-x3.webp",
+            "supay-x3.webp"
+          ],
+          "src": [
+            "symbolsAtlas/animation/supay-x3/supay-x3.webp"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/borders/borders.json",
+            "borders.json"
+          ],
+          "src": [
+            "symbolsAtlas/borders/borders.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/borders/borders.png",
+            "borders.png"
+          ],
+          "src": [
+            "symbolsAtlas/borders/borders.png"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/symbols/symbols.json",
+            "symbols.json"
+          ],
+          "src": [
+            "symbolsAtlas/symbols/symbols.json"
+          ]
+        },
+        {
+          "alias": [
+            "symbolsAtlas/symbols/symbols.png",
+            "symbols.png"
+          ],
+          "src": [
+            "symbolsAtlas/symbols/symbols.png"
+          ]
         }
       ]
     }
